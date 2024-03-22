@@ -57,15 +57,15 @@ const FeedContent: React.FC<props> = ({ renderComponent }: any) => {
     if (userLogin) {
       if (renderComponent) renderComponent.renderPostEditor();
     }else{
-      toast.error(`Unknown User Cant \n Post Pls Sign In`, {
-        position: "top-right",
+      toast.error(`Please sign in to post feed`, {
+        position: "top-left",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
         });
     }
   };
