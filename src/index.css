@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "DM sans", sans-serif;
+}
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+*{
+  scroll-behavior: smooth scroll;
+  font-family: "DM sans", sans-serif;
+}

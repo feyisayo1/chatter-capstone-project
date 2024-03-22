@@ -1,0 +1,142 @@
+#post {
+  gap: 0;
+  height: 100%;
+  display: flex;
+  overflow: scroll;
+  max-height: 70dvh;
+  max-width: 1076px;
+  flex-direction: column;
+  width: calc(95% - 100px);
+  border: 1px solid #d0d0d0;
+  padding: 30px 50px 100% 50px;
+}
+#post::-webkit-scrollbar {
+  display: none;
+}
+#post > button {
+  border: none;
+  display: flex;
+  outline: none;
+  color: #fff;
+  padding: 12px 30px;
+  width: fit-content;
+  border-radius: 4px;
+  height: fit-content;
+  align-self: flex-end;
+  background: #543ee0;
+}
+#post > button > p {
+  font-size: 15px;
+  font-weight: 700;
+}
+#post > div {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  align-items: normal;
+  flex-direction: column;
+}
+
+#addCircle {
+  display: flex;
+  padding: 24px;
+  border-radius: 50%;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b1b0b0;
+  background-color: transparent;
+}
+#addCircle > :nth-child(1) {
+  width: 2px;
+  height: 24px;
+  position: absolute;
+  border-radius: 10px;
+  pointer-events: none;
+  background-color: #888888;
+  animation: Spin-in 0.5s ease-out forwards;
+}
+#addCircle > :nth-child(2) {
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  border-radius: 10px;
+  pointer-events: none;
+  background-color: #888888;
+  animation: Spin-in 0.5s ease-out forwards;
+}
+
+@keyframes Spin-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(133deg);
+  }
+}
+
+@keyframes Spin-in {
+  0% {
+    transform: rotate(133deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #post {
+    padding: 20px 30px 100% 30px;
+    width: calc(95% - 60px);
+  }
+  #post > div {
+    gap: 10px;
+  }
+  #post > button {
+    padding: 10px 25px;
+  }
+  #post > button > p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  #addCircle {
+    padding: 20px;
+    border: 0.5px solid #b1b0b0;
+  }
+  #addCircle > :nth-child(1) {
+    width: 2px;
+    height: 18px;
+  }
+  #addCircle > :nth-child(2) {
+    width: 18px;
+    height: 2px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #post {
+    padding: 20px 15px 100% 15px;
+    width: calc(95% - 30px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  #post > button {
+    padding: 10px 18px;
+  }
+  #post > button > p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  #addCircle {
+    padding: 18px;
+  }
+  #addCircle > :nth-child(1) {
+    height: 16px;
+  }
+  #addCircle > :nth-child(2) {
+    width: 16px;
+    height: 1.5px;
+  }
+}

@@ -1,0 +1,62 @@
+#user-account {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#user-account > div {
+  width: 100%;
+  min-height: 350px;
+  position: relative;
+  background-color: #949494;
+}
+#user-account > section{
+  gap: 20px;
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  align-items: flex-start;
+  width:calc(100% - 60px);
+  justify-content: space-between;
+}
+#user-account> section > button{
+  gap: 8px;
+  border: none;
+  display: flex;
+  outline: none;
+  color: #fff;
+  padding: 10px 25px;
+  width: fit-content;
+  border-radius: 4px;
+  height: fit-content;
+  background: #543ee0;
+  font-family: "DM sans" , sans-serif;
+}
+#user-account > section > span {
+  gap: 10px;
+  top: -120px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+#user-account > section > span > h1 {
+  color: #000;
+  font-weight: 600;
+}
+#user-account > section > span > div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+#user-account > section > span > span {
+  gap: 10px;
+  display: flex;
+  color: #949494;
+  align-items: center;
+}
+#user-account > section > span > span >  p {
+  color: #949494;
+  font-weight: 500;
+}

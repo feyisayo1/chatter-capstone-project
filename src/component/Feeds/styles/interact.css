@@ -1,0 +1,95 @@
+#blog-post #interact {
+  display: flex;
+  flex-direction: column;
+}
+#blog-post #interact > div {
+  width: 100%;
+  display: flex;
+  padding: 0 5px;
+  max-width: 600px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#blog-post #interact > div button {
+  gap: 5px;
+  padding: 0;
+  border: none;
+  outline: none;
+  display: flex;
+  border-radius: 0;
+  align-items: center;
+  height: fit-content;
+  flex-direction: row;
+  background-color: transparent;
+}
+#blog-post #interact > div > :nth-child(1) {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+#blog-post #interact > div > button > p {
+  color: #919191;
+}
+#all-comment {
+  gap: 10px;
+  display: flex;
+  padding: 0 5px;
+  max-width: 600px;
+  padding-bottom: 10px;
+  flex-direction: column;
+}
+#all-comment input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "DM sans", sans-serif;
+}
+#all-comment button {
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: fit-content;
+  align-self: flex-end;
+  background-color: #543ee0;
+  font-family: "DM sans", sans-serif;
+}
+#all-comment > div {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+#all-comment > div .user-comment {
+  padding: 5px 10px;
+  color: white;
+  width: fit-content;
+  border-radius: 4px;
+  align-self: flex-start;
+  background-color: #543ee0;
+}
+#all-comment > div div {
+  color: #543ee0;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 4px;
+  align-self: flex-end;
+  background-color: #fff;
+  border: 1px solid #543ee0;
+}
+@media only screen and (max-width: 500px) {
+  #blog-post #interact > div button > svg {
+    width: 20px;
+    height: 20px;
+  }
+  #blog-post #interact > div {
+    width: 100%;
+    display: flex;
+    padding: 0 5px;
+    max-width: 500px;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

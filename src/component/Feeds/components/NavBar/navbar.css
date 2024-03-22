@@ -1,0 +1,266 @@
+#nav-bar {
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  height: 100dvh;
+  max-width: 268px;
+  overflow-y: scroll;
+  align-items: center;
+  flex-direction: column;
+  transition: all ease 0.5s;
+  border: 1px solid #d0d0d0;
+  border-top: none;
+}
+#nav-bar::-webkit-scrollbar {
+  display: none;
+}
+#nav-bar > a {
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #543ee0;
+  line-height: 48px;
+  text-decoration: none;
+}
+#nav-bar > section {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  max-width: 174px;
+  min-width: 174px;
+  flex-direction: column;
+}
+#nav-bar > section > div {
+  gap: 10px;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+#nav-bar > section > div > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+#nav-bar > section > nav {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#nav-bar > section > nav > a {
+  gap: 10px;
+  display: flex;
+  color: #626262;
+  text-decoration: none;
+}
+#nav-bar > section > nav > a:hover {
+  gap: 10px;
+  display: flex;
+  color: #543ee0;
+  text-decoration: none;
+}
+#nav-bar > section > nav > a > svg {
+  fill: inherit;
+  transition: all 0.5s ease;
+}
+#nav-bar > section > nav > a > p {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all 0.5s ease;
+}
+#nav-bar > section > nav > button {
+  gap: 10px;
+  padding: 0;
+  border: none;
+  display: flex;
+  color: #626262;
+  align-items: center;
+  background-color: #fff;
+}
+#nav-bar > section > nav > button > svg {
+  color: inherit;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+#nav-bar > section > nav > button > p {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+#nav-bar > section > nav > a > div {
+  width: 25px;
+  height: 26px;
+  border-radius: 50%;
+}
+#nav-bar > section > nav > a > div > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #0000002f;
+}
+#nav-bar > .persoanl {
+  margin-bottom: 50px;
+}
+#nav-bar > .persoanl > nav > a > svg {
+  fill: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  #nav-bar {
+    width: 100%;
+    padding: 20px 0;
+    max-width: fit-content;
+    background-color: #fff;
+  }
+  #nav-bar > h1 {
+    display: none;
+  }
+  #nav-bar > section {
+    min-width: 70px;
+    max-width: 70px;
+    width: fit-content;
+    align-items: center;
+  }
+  #nav-bar > section > nav {
+    align-items: center;
+  }
+  #nav-bar > section > nav > a > p {
+    display: none;
+  }
+  #nav-bar > section > nav > button {
+    gap: 0;
+  }
+  #nav-bar > section > nav > button > a > p {
+    display: none;
+  }
+  #nav-bar > section > nav > button > p {
+    display: none;
+  }
+  #nav-bar > section > div > h3 {
+    display: none;
+  }
+  #nav-bar > section > div > svg {
+    width: 30px;
+    height: 30px;
+    color: #543ee0;
+  }
+}
+
+@media only screen and (max-width: 768px) {a
+  #nav-bar > section {
+    min-width: 60px;
+    width: fit-content;
+    align-items: center;
+  }
+  #nav-bar > section > nav > a > svg {
+    width: 20px;
+    height: 20px;
+  }
+  #nav-bar > section > nav > button > svg {
+    width: 20px;
+    height: 20px;
+  }
+  #nav-bar > section > div > h3 {
+    display: none;
+  }
+  #nav-bar > section > div > svg {
+    width: 25px;
+    height: 25px;
+    color: #543ee0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #nav-bar {
+    gap: 20px;
+    width: 55%;
+    z-index: 2;
+    padding-top: 0;
+    max-width: 100%;
+    padding-left: 10%;
+    position: absolute;
+    align-items: center;
+    transition: all ease 0.5s;
+    animation: nav-slide-out 0.5s forwards ease-in;
+  }
+  #nav-bar > h1 {
+    display: flex;
+    margin-top: 0;
+    font-size: 20px;
+    align-self: flex-start;
+  }
+  #nav-bar > section {
+    gap: 10px;
+    min-width: 100%;
+    align-items: flex-start;
+  }
+  #nav-bar > section > div {
+    gap: 5px;
+    padding: 0;
+  }
+  #nav-bar > section > div > h3 {
+    display: flex;
+    font-size: 15px;
+  }
+  #nav-bar > section > div > svg {
+    width: 20px;
+    height: 20px;
+    color: #543ee0;
+  }
+  #nav-bar > section > nav {
+    gap: 10px;
+    padding: 0;
+  }
+  #nav-bar > section > nav > a {
+    gap: 7px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+  }
+  #nav-bar > section > nav > a > p {
+    display: flex;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  #nav-bar > section > nav > a > svg {
+    width: 20px;
+    height: 20px;
+  }
+  #nav-bar > section > nav > button {
+    gap: 10px;
+    width: 100%;
+  }
+  #nav-bar > section > nav > button > p {
+    display: flex;
+    font-size: 14px;
+  }
+  #nav-bar > section > nav > button > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes nav-slide-out {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes nav-slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

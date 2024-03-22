@@ -1,0 +1,77 @@
+#add-file {
+  gap: 20px;
+  display: flex;
+  padding: 20px;
+  overflow: hidden;
+  align-items: center;
+  border-left: 1px solid #b1b0b0;
+}
+#add-file > label {
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+  height: fit-content;
+  border: 1px solid #543ee0;
+  animation: edit-out 0.5s ease-in-out forwards;
+}
+#add-file > label > svg {
+  width: 24px;
+  height: 24px;
+  color: #543ee0;
+  align-self: center;
+}
+#add-file > label > input {
+  display: none;
+}
+#add-file > span {
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+  height: fit-content;
+  color: #543ee0;
+  border: 1px solid #543ee0;
+  animation: edit-out 0.5s ease-in-out forwards;
+}
+
+@keyframes edit-out {
+  0% {
+    transform: translateX(-350%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #add-file {
+    gap: 10px;
+    padding: 10px;
+  }
+  #add-file > label > svg {
+    width: 18px;
+    height: 18px;
+    color: #543ee0;
+    align-self: center;
+  }
+  #add-file > span {
+    padding: 7px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #add-file {
+    gap: 10px;
+    padding: 10px;
+  }
+  #add-file > label > svg {
+    width: 16px;
+    height: 16px;
+  }
+  #add-file > span {
+    padding: 6px;
+  }
+}

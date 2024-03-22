@@ -1,0 +1,86 @@
+#SignInWithOthers {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#SignInWithOthers > button {
+  gap: 10px;
+  width: 100%;
+  height: 46px;
+  border: none;
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  background: #fff;
+  padding-right: 45px;
+  align-items: center;
+  border: 1px solid #371de0;
+  font-family: "DM Sans", sans-serif;
+}
+#SignInWithOthers > button > p {
+  color: #000;
+  font-size: 18px;
+  margin-left: 15%;
+  font-weight: 700;
+  max-width: 520px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+#SignInWithOthers > button > img {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  pointer-events: none;
+  justify-self: flex-start;
+  background-color: #fff;
+}
+#SignInWithOthers > :nth-child(1) {
+  width: 80%;
+  transition: all 0.5s ease-out;
+}
+#SignInWithOthers > :nth-child(2) {
+  width: 10%;
+  transition: all 0.5s ease-out;
+}
+#SignInWithOthers > :nth-child(2):hover {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1080px) {
+  #SignInWithOthers {
+    margin-top: 10px;
+  }
+  #SignInWithOthers {
+    gap: 10px;
+  }
+  #SignInWithOthers > button {
+    gap: 10px;
+    height: 43px;
+  }
+  #SignInWithOthers > button > p {
+    font-size: 16px;
+    margin-left: 12%;
+    font-weight: 600;
+  }
+  #SignInWithOthers > button > img {
+    padding: 7px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #SignInWithOthers > button {
+    gap: 5%;
+    padding: 5px;
+    padding-right: 35px;
+  }
+  #SignInWithOthers > button > p {
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding-right: 60px;
+  }
+  #SignInWithOthers > button > img {
+    padding: 5px;
+  }
+}
