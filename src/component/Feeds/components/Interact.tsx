@@ -2,7 +2,9 @@ import "../styles/interact.css";
 import { db } from "../../../App";
 import { useEffect, useState } from "react";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
-import { ChartSquare, Heart, Message2 } from "iconsax-react";
+import {Heart} from "iconsax-react";
+import com from '../../../../public/com.png';
+import int from '../../../../public/int.png';
 
 interface props {
   user: any;
@@ -70,7 +72,7 @@ const Interact: React.FC<props> = ({ user, blog }) => {
             style={{ color: "#543ee0", fill: "#543ee0" }}
             onClick={handleLike}
           >
-            <Heart style={{ fill: "#543ee0" }} />
+            <Heart style={{ fill: "#543ee0"}}  />
             <p>{updatedLikes.length !== 0 ? updatedLikes.length : null}</p>
           </button>
         ) : (
@@ -102,13 +104,13 @@ const Interact: React.FC<props> = ({ user, blog }) => {
       <>
         {view ? (
           <button style={{ color: "#543ee0" }}>
-            <ChartSquare />
+            <img src={int}/>
             <p>{blog.view.length !== 0 ? blog.view.length : null}</p>
             <p>Views</p>
           </button>
         ) : (
           <button>
-            <ChartSquare />
+            <img src={int}/>
             <p>{blog.view.length !== 0 ? blog.view.length : null}</p>
             <p>Views</p>
           </button>
@@ -196,10 +198,10 @@ const Interact: React.FC<props> = ({ user, blog }) => {
       <section id="interact">
         {comment && <CommentSec />}
         <div>
-          <LikeButton />
           <button onClick={handleCommentSection}>
-            <Message2 />
+            <img src={com}/>
           </button>
+          <LikeButton />
           <View />
         </div>
       </section>
